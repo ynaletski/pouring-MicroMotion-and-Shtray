@@ -1,0 +1,1047 @@
+
+ Start  Stop   Length Name               Class
+
+ 00000H 021EBH 021ECH _TEXT              CODE
+ 021ECH 025AEH 003C3H TIME_TST_TEXT      CODE
+ 025AFH 025AFH 00000H SYS_VAR_TEXT       CODE
+ 025AFH 0267BH 000CDH INITLIB_TEXT       CODE
+ 0267CH 027D2H 00157H USRTIMER_TEXT      CODE
+ 027D3H 0281CH 0004AH BAUDDIV_TEXT       CODE
+ 0281DH 02834H 00018H CHKPORT_TEXT       CODE
+ 02835H 0286CH 00038H COMINST_TEXT       CODE
+ 0286DH 02892H 00026H COMREST_TEXT       CODE
+ 02893H 028BBH 00029H ISCOM_TEXT         CODE
+ 028BCH 028E1H 00026H READCOM_TEXT       CODE
+ 028E2H 028E2H 00000H UART_VAR_TEXT      CODE
+ 028E2H 0290FH 0002EH CHG_DATA_TEXT      CODE
+ 02910H 02A53H 00144H C1_BAUD_TEXT       CODE
+ 02A54H 02CF5H 002A2H C1_DMA_TEXT        CODE
+ 02CF6H 02D1DH 00028H C1_ISCOM_TEXT      CODE
+ 02D1EH 031C9H 004ACH C1_ISR_TEXT        CODE
+ 031CAH 03239H 00070H C1_READ_TEXT       CODE
+ 0323AH 0337DH 00144H C2_BAUD_TEXT       CODE
+ 0337EH 0361FH 002A2H C2_DMA_TEXT        CODE
+ 03620H 03647H 00028H C2_ISCOM_TEXT      CODE
+ 03648H 03AF3H 004ACH C2_ISR_TEXT        CODE
+ 03AF4H 03B00H 0000DH C2_OE_TEXT         CODE
+ 03B01H 03B39H 00039H C2_PRINT_TEXT      CODE
+ 03B3AH 03BA9H 00070H C2_READ_TEXT       CODE
+ 03BAAH 03CF9H 00150H C2_SENDN_TEXT      CODE
+ 03CFAH 03D29H 00030H C2_STR_TEXT        CODE
+ 03D2AH 03DC9H 000A0H C2_TOCOM_TEXT      CODE
+ 03DCAH 03EB7H 000EEH C3_BAUD_TEXT       CODE
+ 03EB8H 03ED2H 0001BH C3_ISCOM_TEXT      CODE
+ 03ED3H 03F3BH 00069H C3_READ_TEXT       CODE
+ 03F3CH 04637H 006FCH C3_UART_TEXT       CODE
+ 04638H 04725H 000EEH C4_BAUD_TEXT       CODE
+ 04726H 04740H 0001BH C4_ISCOM_TEXT      CODE
+ 04741H 04781H 00041H C4_READ_TEXT       CODE
+ 04782H 04C01H 00480H C4_UART_TEXT       CODE
+ 04C02H 04CEFH 000EEH C5_BAUD_TEXT       CODE
+ 04CF0H 04D0AH 0001BH C5_ISCOM_TEXT      CODE
+ 04D0BH 04D73H 00069H C5_READ_TEXT       CODE
+ 04D74H 0546FH 006FCH C5_UART_TEXT       CODE
+ 05470H 0555DH 000EEH C6_BAUD_TEXT       CODE
+ 0555EH 05578H 0001BH C6_ISCOM_TEXT      CODE
+ 05579H 055E1H 00069H C6_READ_TEXT       CODE
+ 055E2H 05CDDH 006FCH C6_UART_TEXT       CODE
+ 05CDEH 05DCBH 000EEH C7_BAUD_TEXT       CODE
+ 05DCCH 05DE6H 0001BH C7_ISCOM_TEXT      CODE
+ 05DE7H 05E4FH 00069H C7_READ_TEXT       CODE
+ 05E50H 0654BH 006FCH C7_UART_TEXT       CODE
+ 0654CH 06556H 0000BH DI1_TEXT           CODE
+ 06557H 06560H 0000AH DI2_TEXT           CODE
+ 06570H 08CE6H 02777H EMU_PROG           CODE
+ 08CF0H 092B7H 005C8H E87_PROG           CODE
+ 092C0H 092C0H 00000H _FARDATA           FAR_DATA
+ 092C0H 092C0H 00000H _FARBSS            FAR_BSS
+ 092C0H 092C0H 00000H _OVERLAY_          OVRINFO
+ 092C0H 092C0H 00000H _1STUB_            STUBSEG
+ 092C0H 09AE9H 0082AH _DATA              DATA
+ 09AEAH 09AEDH 00004H _CVTSEG            DATA
+ 09AEEH 09AF3H 00006H _SCNSEG            DATA
+ 09AF4H 09AF4H 00000H _CONST             CONST
+ 09AF4H 09AFFH 0000CH _INIT_             INITDATA
+ 09B00H 09B00H 00000H _INITEND_          INITDATA
+ 09B00H 09B05H 00006H _EXIT_             EXITDATA
+ 09B06H 09B06H 00000H _EXITEND_          EXITDATA
+ 09B06H 09D0BH 00206H _BSS               BSS
+ 09D0CH 09D0CH 00000H _BSSEND            BSSEND
+ 09D10H 09E1FH 00110H _STACK             STACK
+
+  Address         Publics by Name
+
+ 092C:0000       DATASEG@
+ 0000:0260       DGROUP@
+ 0657:2152       e086_Entry
+ 0657:26E0       e086_Shortcut
+ 08CF:0306       e087_Entry
+ 08CF:03C6       e087_Shortcut
+ 08CF:0430       e087_Trap
+ 0000:FE32  Abs  FIARQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:1632  Abs  FIERQQ
+ 0000:0632  Abs  FISRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:027E       F_LXLSH@
+ 0000:0264       F_LXMUL@
+ 0000:180E       F_OVERFLOW@
+ 0000:0AFF       F_PADD@
+ 0000:0B2E       F_PSUB@
+ 0000:027E       LXLSH@
+ 0000:0264       LXMUL@
+ 0000:027B       N_LXLSH@
+ 0000:180E       N_OVERFLOW@
+ 0000:0AFC       N_PADD@
+ 0000:0C83       N_PCMP@
+ 0000:0B2B       N_PSUB@
+ 0000:180E       OVERFLOW@
+ 0000:0AFF       PADD@
+ 0000:0B2E       PSUB@
+ 0000:0249       _abort
+ 0000:0A3C       _atexit
+ 092C:0319       _bCtsChanged_1
+ 092C:0387       _bCtsChanged_5
+ 092C:03C7       _bCtsChanged_6
+ 092C:0407       _bCtsChanged_7
+ 092C:0330       _bGetBreak_1
+ 092C:035E       _bGetBreak_2
+ 092C:02AF       _bGetBreak_3
+ 092C:02F5       _bGetBreak_4
+ 092C:039E       _bGetBreak_5
+ 092C:03DE       _bGetBreak_6
+ 092C:041E       _bGetBreak_7
+ 092C:0364       _bMsrChanged
+ 092C:0336       _bMsrChanged_1
+ 092C:03A4       _bMsrChanged_5
+ 092C:03E4       _bMsrChanged_6
+ 092C:0424       _bMsrChanged_7
+ 092C:01B6       _bNeedSetSpeed
+ 092C:0322       _bUseXonXoff_1
+ 092C:028F       _bUseXonXoff_3
+ 092C:02D5       _bUseXonXoff_4
+ 092C:0390       _bUseXonXoff_5
+ 092C:03D0       _bUseXonXoff_6
+ 092C:0410       _bUseXonXoff_7
+ 025A:000F       _CheckCpuSpeed
+ 03F3:0181       _CheckInputBufSize_1
+ 04D7:0179       _CheckInputBufSize_5
+ 055E:0177       _CheckInputBufSize_6
+ 05E5:0175       _CheckInputBufSize_7
+ 03F3:016B       _CheckXonXoff_1
+ 02D1:00E5       _CheckXonXoff_3
+ 0364:00DF       _CheckXonXoff_4
+ 04D7:0163       _CheckXonXoff_5
+ 055E:0161       _CheckXonXoff_6
+ 05E5:015F       _CheckXonXoff_7
+ 0281:000D       _Chk_Port
+ 02A5:021F       _ClearCom_DMA_3
+ 0337:0229       _ClearCom_DMA_4
+ 03F3:003F       _ClearTxBuffer_1
+ 0478:0013       _ClearTxBuffer_2
+ 02D1:0040       _ClearTxBuffer_3
+ 0364:003A       _ClearTxBuffer_4
+ 04D7:0037       _ClearTxBuffer_5
+ 055E:0035       _ClearTxBuffer_6
+ 05E5:0033       _ClearTxBuffer_7
+ 092C:02FA       _ComBase_1
+ 092C:033A       _ComBase_2
+ 092C:0368       _ComBase_5
+ 092C:03A8       _ComBase_6
+ 092C:03E8       _ComBase_7
+ 092C:0297       _ComData7_3
+ 092C:02DD       _ComData7_4
+ 092C:0300       _ComErr_1
+ 092C:0340       _ComErr_2
+ 092C:036E       _ComErr_5
+ 092C:03AE       _ComErr_6
+ 092C:03EE       _ComErr_7
+ 092C:0323       _ComFcr_1
+ 092C:0351       _ComFcr_2
+ 092C:0391       _ComFcr_5
+ 092C:03D1       _ComFcr_6
+ 092C:0411       _ComFcr_7
+ 092C:0328       _ComInCount_1
+ 092C:0356       _ComInCount_2
+ 092C:0396       _ComInCount_5
+ 092C:03D6       _ComInCount_6
+ 092C:0416       _ComInCount_7
+ 092C:032C       _ComOutCount_1
+ 092C:035A       _ComOutCount_2
+ 092C:039A       _ComOutCount_5
+ 092C:03DA       _ComOutCount_6
+ 092C:041A       _ComOutCount_7
+ 092C:0315       _CurCTS_1
+ 092C:0383       _CurCTS_5
+ 092C:03C3       _CurCTS_6
+ 092C:0403       _CurCTS_7
+ 092C:0996       _CurMsr
+ 092C:0994       _CurMsr_1
+ 092C:09AC       _CurMsr_5
+ 092C:09B8       _CurMsr_6
+ 092C:09C4       _CurMsr_7
+ 092C:0317       _CurRTS_1
+ 092C:0385       _CurRTS_5
+ 092C:03C5       _CurRTS_6
+ 092C:0405       _CurRTS_7
+ 02A5:01E3       _DataSizeInCom_DMA_3
+ 0337:01ED       _DataSizeInCom_DMA_4
+ 092C:0324       _DoInputData_1
+ 092C:0352       _DoInputData_2
+ 092C:0392       _DoInputData_5
+ 092C:03D2       _DoInputData_6
+ 092C:0412       _DoInputData_7
+ 092C:007F       _errno
+ 092C:0290       _err_3
+ 092C:02D6       _err_4
+ 0000:0AC1       _exit
+ 0000:13A7       _farfree
+ 0000:14BB       _farmalloc
+ 0000:161F       _farrealloc
+ 092C:0311       _fCtsControlMode_1
+ 092C:037F       _fCtsControlMode_5
+ 092C:03BF       _fCtsControlMode_6
+ 092C:03FF       _fCtsControlMode_7
+ 0000:1820       _fflush
+ 092C:0098       _flag
+ 0000:18ED       _flushall
+ 0000:192F       _fprintf
+ 0000:1AE5       _fputc
+ 0000:1C78       _fputchar
+ 0000:13A7       _free
+ 092C:0313       _fRtsControlMode_1
+ 092C:0381       _fRtsControlMode_5
+ 092C:03C1       _fRtsControlMode_6
+ 092C:0401       _fRtsControlMode_7
+ 0000:19CD       _fseek
+ 0000:1A4D       _ftell
+ 021E:000C       _getch
+ 0654:000C       _GetDi1
+ 0655:0007       _GetDi2
+ 0478:00BB       _GetInputBufFreeSize
+ 03F3:00E7       _GetInputBufFreeSize_1
+ 04D7:00DF       _GetInputBufFreeSize_5
+ 055E:00DD       _GetInputBufFreeSize_6
+ 05E5:00DB       _GetInputBufFreeSize_7
+ 03F3:0058       _GetTxBufferFreeSize_1
+ 0478:002C       _GetTxBufferFreeSize_2
+ 02D1:004C       _GetTxBufferFreeSize_3
+ 0364:0046       _GetTxBufferFreeSize_4
+ 04D7:0050       _GetTxBufferFreeSize_5
+ 055E:004E       _GetTxBufferFreeSize_6
+ 05E5:004C       _GetTxBufferFreeSize_7
+ 092C:0274       _In7188Buf_3
+ 092C:02BA       _In7188Buf_4
+ 092C:0280       _InBeginIdx_3
+ 092C:02C6       _InBeginIdx_4
+ 092C:0309       _InBufSize_1
+ 092C:0349       _InBufSize_2
+ 092C:027C       _InBufSize_3
+ 092C:02C2       _InBufSize_4
+ 092C:0377       _InBufSize_5
+ 092C:03B7       _InBufSize_6
+ 092C:03F7       _InBufSize_7
+ 092C:0301       _InData_1
+ 092C:0341       _InData_2
+ 092C:036F       _InData_5
+ 092C:03AF       _InData_6
+ 092C:03EF       _InData_7
+ 092C:0282       _InEndIdx_3
+ 092C:02C8       _InEndIdx_4
+ 092C:02FC       _InInIdx_1
+ 092C:033C       _InInIdx_2
+ 092C:036A       _InInIdx_5
+ 092C:03AA       _InInIdx_6
+ 092C:03EA       _InInIdx_7
+ 025A:00CA       _InitLib
+ 092C:02FE       _InOutIdx_1
+ 092C:033E       _InOutIdx_2
+ 092C:036C       _InOutIdx_5
+ 092C:03AC       _InOutIdx_6
+ 092C:03EC       _InOutIdx_7
+ 0283:0005       _InstallCom
+ 03F3:0159       _InstallComInputData_1
+ 0478:0107       _InstallComInputData_2
+ 02D1:00D3       _InstallComInputData_3
+ 0364:00CD       _InstallComInputData_4
+ 04D7:0151       _InstallComInputData_5
+ 055E:014F       _InstallComInputData_6
+ 05E5:014D       _InstallComInputData_7
+ 092C:01CE       _InstallCom_
+ 03F3:0500       _InstallCom_1
+ 0478:02A3       _InstallCom_2
+ 02D1:02E5       _InstallCom_3
+ 0364:02DF       _InstallCom_4
+ 04D7:04F8       _InstallCom_5
+ 055E:04F6       _InstallCom_6
+ 05E5:04F4       _InstallCom_7
+ 02A5:00A4       _InstallCom_DMA_3
+ 0337:00AE       _InstallCom_DMA_4
+ 0267:0131       _InstallUserTimerFunction_ms
+ 0267:00DA       _InstallUserTimerFunction_us
+ 092C:01A4       _IntVect
+ 0000:0BA7       _isatty
+ 0289:0006       _IsCom
+ 03AF:0004       _IsComOutBufEmpty_4
+ 092C:020E       _IsCom_
+ 03EB:0008       _IsCom_1
+ 0472:0006       _IsCom_2
+ 02CF:0006       _IsCom_3
+ 0362:0000       _IsCom_4
+ 04CF:0000       _IsCom_5
+ 0555:000E       _IsCom_6
+ 05DC:000C       _IsCom_7
+ 02A5:023E       _IsCom_DMA_3
+ 0337:0248       _IsCom_DMA_4
+ 027D:0003       _LongDiv
+ 092C:02E3       _LossCnt_0_4
+ 092C:02A1       _LossCnt_1_3
+ 092C:02E7       _LossCnt_1_4
+ 092C:02A5       _LossCnt_2_3
+ 092C:02EB       _LossCnt_2_4
+ 092C:029D       _LossCnt__3
+ 0000:0C5A       _lseek
+ 092C:0338       _LsrError_1
+ 092C:0366       _LsrError_2
+ 092C:03A6       _LsrError_5
+ 092C:03E6       _LsrError_6
+ 092C:0426       _LsrError_7
+ 021E:01A9       _main
+ 0000:14B1       _malloc
+ 0000:1AA5       _memcpy
+ 092C:0320       _NeedXoff_1
+ 092C:028D       _NeedXoff_3
+ 092C:02D3       _NeedXoff_4
+ 092C:038E       _NeedXoff_5
+ 092C:03CE       _NeedXoff_6
+ 092C:040E       _NeedXoff_7
+ 092C:084C       _nm1
+ 092C:084A       _nm2
+ 0289:0003       _NullIsCom
+ 092C:0293       _OldVectA
+ 092C:02D9       _OldVectB
+ 092C:0278       _Out7188Buf_3
+ 092C:02BE       _Out7188Buf_4
+ 092C:0284       _OutBeginIdx_3
+ 092C:02CA       _OutBeginIdx_4
+ 092C:030B       _OutBufSize_1
+ 092C:034B       _OutBufSize_2
+ 092C:027E       _OutBufSize_3
+ 092C:02C4       _OutBufSize_4
+ 092C:0379       _OutBufSize_5
+ 092C:03B9       _OutBufSize_6
+ 092C:03F9       _OutBufSize_7
+ 092C:0305       _OutData_1
+ 092C:0345       _OutData_2
+ 092C:0373       _OutData_5
+ 092C:03B3       _OutData_6
+ 092C:03F3       _OutData_7
+ 092C:0286       _OutEndIdx_3
+ 092C:02CC       _OutEndIdx_4
+ 092C:030D       _OutInIdx_1
+ 092C:034D       _OutInIdx_2
+ 092C:037B       _OutInIdx_5
+ 092C:03BB       _OutInIdx_6
+ 092C:03FB       _OutInIdx_7
+ 092C:030F       _OutOutIdx_1
+ 092C:034F       _OutOutIdx_2
+ 092C:037D       _OutOutIdx_5
+ 092C:03BD       _OutOutIdx_6
+ 092C:03FD       _OutOutIdx_7
+ 0000:0A31       _pow10
+ 03B0:0001       _printCom_4
+ 021E:0088       _prnt
+ 021E:0038       _prnt_nm
+ 021E:005A       _prnt_nm1
+ 092C:0094       _quit_mmi
+ 092C:0096       _qwe
+ 092C:0299       _Rcnt_3
+ 092C:02DF       _Rcnt_4
+ 028B:000C       _ReadCom
+ 02A5:012F       _ReadComn_DMA_3
+ 0337:0139       _ReadComn_DMA_4
+ 092C:022E       _ReadCom_
+ 03ED:0003       _ReadCom_1
+ 0474:0001       _ReadCom_2
+ 031C:000A       _ReadCom_3
+ 03B3:000A       _ReadCom_4
+ 04D0:000B       _ReadCom_5
+ 0557:0009       _ReadCom_6
+ 05DE:0007       _ReadCom_7
+ 02A5:024D       _ReadCom_DMA_3
+ 0337:0257       _ReadCom_DMA_4
+ 0000:1618       _realloc
+ 092C:031F       _ReceiveXoff_1
+ 092C:028C       _ReceiveXoff_3
+ 092C:02D2       _ReceiveXoff_4
+ 092C:038D       _ReceiveXoff_5
+ 092C:03CD       _ReceiveXoff_6
+ 092C:040D       _ReceiveXoff_7
+ 092C:01A0       _ResetMode
+ 0286:000D       _RestoreCom
+ 092C:01EE       _RestoreCom_
+ 03F3:0670       _RestoreCom_1
+ 0478:03EA       _RestoreCom_2
+ 02D1:0416       _RestoreCom_3
+ 0364:0410       _RestoreCom_4
+ 04D7:0668       _RestoreCom_5
+ 055E:0666       _RestoreCom_6
+ 05E5:0664       _RestoreCom_7
+ 092C:0321       _SendXoff_1
+ 092C:028E       _SendXoff_3
+ 092C:02D4       _SendXoff_4
+ 092C:038F       _SendXoff_5
+ 092C:03CF       _SendXoff_6
+ 092C:040F       _SendXoff_7
+ 02D1:00FB       _Serial_Isr_3
+ 0364:00F5       _Serial_Isr_4
+ 03DC:000A       _SetBaudrate_1
+ 0463:0008       _SetBaudrate_2
+ 0291:0000       _SetBaudrate_3
+ 0323:000A       _SetBaudrate_4
+ 04C0:0002       _SetBaudrate_5
+ 0547:0000       _SetBaudrate_6
+ 05CD:000E       _SetBaudrate_7
+ 0000:17E0       _setblock
+ 03F3:006F       _SetComFifoTriggerLevel_1
+ 0478:0043       _SetComFifoTriggerLevel_2
+ 04D7:0067       _SetComFifoTriggerLevel_5
+ 055E:0065       _SetComFifoTriggerLevel_6
+ 05E5:0063       _SetComFifoTriggerLevel_7
+ 03F3:0017       _SetComPortBufferSize_1
+ 0478:0002       _SetComPortBufferSize_2
+ 02D1:0019       _SetComPortBufferSize_3
+ 0364:0013       _SetComPortBufferSize_4
+ 04D7:000F       _SetComPortBufferSize_5
+ 055E:000D       _SetComPortBufferSize_6
+ 05E5:000B       _SetComPortBufferSize_7
+ 03D2:000A       _SetComTimeout_4
+ 03DC:0067       _SetDataFormat_1
+ 0463:0065       _SetDataFormat_2
+ 0291:005F       _SetDataFormat_3
+ 0323:0069       _SetDataFormat_4
+ 04C0:005F       _SetDataFormat_5
+ 0547:005D       _SetDataFormat_6
+ 05CD:006B       _SetDataFormat_7
+ 0000:1E8B       _setvbuf
+ 03F3:000C       _SetXonXoffControlMode_1
+ 02D1:000E       _SetXonXoffControlMode_3
+ 0364:0008       _SetXonXoffControlMode_4
+ 04D7:0004       _SetXonXoffControlMode_5
+ 055E:0002       _SetXonXoffControlMode_6
+ 05E5:0000       _SetXonXoffControlMode_7
+ 092C:031B       _SizeToXoff_1
+ 092C:0288       _SizeToXoff_3
+ 092C:02CE       _SizeToXoff_4
+ 092C:0389       _SizeToXoff_5
+ 092C:03C9       _SizeToXoff_6
+ 092C:0409       _SizeToXoff_7
+ 092C:031D       _SizeToXon_1
+ 092C:028A       _SizeToXon_3
+ 092C:02D0       _SizeToXon_4
+ 092C:038B       _SizeToXon_5
+ 092C:03CB       _SizeToXon_6
+ 092C:040B       _SizeToXon_7
+ 0000:1FE6       _sprintf
+ 092C:02A9       _status1_3
+ 092C:02EF       _status1_4
+ 092C:01BE       _STD_PORT
+ 0267:015E       _StopUserTimerFun
+ 092C:01A8       _SystemSerialNumber
+ 0000:0D5A       _tell
+ 092C:019C       _TimeTicks
+ 092C:0846       _time_nm1
+ 03BA:000A       _ToComBufn_4
+ 03CF:000A       _ToComStr_4
+ 03D2:0015       _ToCom_4
+ 092C:024E       _TriggerLevel
+ 092C:086A       _ttt1
+ 092C:085E       _ttt1_l
+ 092C:0868       _ttt2
+ 092C:085A       _ttt2_l
+ 092C:0866       _ttt3
+ 092C:0856       _ttt3_l
+ 092C:0864       _ttt4
+ 092C:0852       _ttt4_l
+ 092C:084E       _ttt_l_nm
+ 092C:0862       _ttt_nm
+ 092C:01B0       _Unit_ms
+ 092C:01B2       _Unit_ms1
+ 092C:01B4       _Unit_ms2
+ 092C:0291       _UseDMA_3
+ 092C:02D7       _UseDMA_4
+ 0000:2008       _vsprintf
+ 092C:0430       __8087
+ 0000:1000  Abs  __AHINCR
+ 0000:000C  Abs  __AHSHIFT
+ 092C:0560       __atexitcnt
+ 092C:09C6       __atexittbl
+ 0000:170F       __brk
+ 092C:008B       __brklvl
+ 092C:006B       __C0argc
+ 092C:006D       __C0argv
+ 092C:0071       __C0environ
+ 0000:0AE2       __cexit
+ 0000:0167       __checknull
+ 0000:0154       __cleanup
+ 092C:01BC       __CpuSpeed
+ 0000:0000  Abs  __cvtfak
+ 0000:0AF0       __c_exit
+ 092C:0444       __default87
+ 092C:072A       __doserrno
+ 0000:0B95       __DOSERROR
+ 092C:072C       __dosErrorToSV
+ 09D1:0000       __emu
+ 092C:0075       __envLng
+ 092C:0077       __envseg
+ 092C:0079       __envSize
+ 0000:0AD0       __exit
+ 092C:0562       __exitbuf
+ 092C:0566       __exitfopen
+ 092C:056A       __exitopen
+ 0000:08B9       __fperror
+ 092C:0728       __fpstklen
+ 0000:04F0       __fpuint
+ 0000:1AC9       __fputc
+ 0000:1C8C       __FPUTN
+ 092C:0087       __heapbase
+ 092C:008F       __heaptop
+ 092C:005B       __Int0Vector
+ 092C:005F       __Int4Vector
+ 092C:0063       __Int5Vector
+ 092C:0067       __Int6Vector
+ 0000:0B5C       __IOERROR
+ 092C:0441       __LDT
+ 0000:0BB8       __LONGTOA
+ 0000:0262       __MMODEL
+ 092C:025C       __Modify_Data
+ 092C:06FE       __nfile
+ 092C:0700       __openfd
+ 092C:007D       __osmajor
+ 092C:007E       __osminor
+ 092C:007D       __osversion
+ 0000:0968       __POW10
+ 092C:0440       __protected
+ 092C:007B       __psp
+ 0000:17DC       __REALCVT
+ 092C:082A       __RealCvtVector
+ 0000:01BD       __restorezero
+ 0000:174E       __sbrk
+ 092C:082E       __ScanTodVector
+ 0000:0CA4       __setupio
+ 092C:0081       __StartTime
+ 092C:0786       __stklen
+ 092C:026C       __Stop2_3
+ 092C:02B2       __Stop2_4
+ 092C:056E       __streams
+ 0000:0168       __terminate
+ 0000:0000  Abs  __turboCvt
+ 0000:0C3A       __UTOA
+ 092C:007D       __version
+ 0000:0D8A       __VPRINTER
+ 0000:2178       __write
+ 0000:06B1       __XCVT
+ 0000:21B4       __xfflush
+ 092C:01B8       ___BaudDiv__
+ 092C:0085       ___brklvl
+ 0000:1267       ___first
+ 0000:0409       ___fpreset
+ 0000:1269       ___last
+ 0000:126B       ___rover
+ 092C:0A46       ___SignalPtr
+ 0000:2029       ___write
+ 092C:01AC       ____OsType__
+
+  Address         Publics by Value
+
+ 0000:0000  Abs  __turboCvt
+ 0000:0000  Abs  __cvtfak
+ 0000:000C  Abs  __AHSHIFT
+ 0000:0632  Abs  FISRQQ
+ 0000:0E32  Abs  FICRQQ
+ 0000:1000  Abs  __AHINCR
+ 0000:1632  Abs  FIERQQ
+ 0000:4000  Abs  FJARQQ
+ 0000:5C32  Abs  FIDRQQ
+ 0000:8000  Abs  FJSRQQ
+ 0000:A23D  Abs  FIWRQQ
+ 0000:C000  Abs  FJCRQQ
+ 0000:FE32  Abs  FIARQQ
+ 0000:0154       __cleanup
+ 0000:0167       __checknull
+ 0000:0168       __terminate
+ 0000:01BD       __restorezero
+ 0000:0249       _abort
+ 0000:0260       DGROUP@
+ 0000:0262       __MMODEL
+ 0000:0264       F_LXMUL@
+ 0000:0264       LXMUL@
+ 0000:027B       N_LXLSH@
+ 0000:027E       LXLSH@
+ 0000:027E       F_LXLSH@
+ 0000:0409       ___fpreset
+ 0000:04F0       __fpuint
+ 0000:06B1       __XCVT
+ 0000:08B9       __fperror
+ 0000:0968       __POW10
+ 0000:0A31       _pow10
+ 0000:0A3C       _atexit
+ 0000:0AC1       _exit
+ 0000:0AD0       __exit
+ 0000:0AE2       __cexit
+ 0000:0AF0       __c_exit
+ 0000:0AFC       N_PADD@
+ 0000:0AFF       F_PADD@
+ 0000:0AFF       PADD@
+ 0000:0B2B       N_PSUB@
+ 0000:0B2E       F_PSUB@
+ 0000:0B2E       PSUB@
+ 0000:0B5C       __IOERROR
+ 0000:0B95       __DOSERROR
+ 0000:0BA7       _isatty
+ 0000:0BB8       __LONGTOA
+ 0000:0C3A       __UTOA
+ 0000:0C5A       _lseek
+ 0000:0C83       N_PCMP@
+ 0000:0CA4       __setupio
+ 0000:0D5A       _tell
+ 0000:0D8A       __VPRINTER
+ 0000:1267       ___first
+ 0000:1269       ___last
+ 0000:126B       ___rover
+ 0000:13A7       _free
+ 0000:13A7       _farfree
+ 0000:14B1       _malloc
+ 0000:14BB       _farmalloc
+ 0000:1618       _realloc
+ 0000:161F       _farrealloc
+ 0000:170F       __brk
+ 0000:174E       __sbrk
+ 0000:17DC       __REALCVT
+ 0000:17E0       _setblock
+ 0000:180E       F_OVERFLOW@
+ 0000:180E       N_OVERFLOW@
+ 0000:180E       OVERFLOW@
+ 0000:1820       _fflush
+ 0000:18ED       _flushall
+ 0000:192F       _fprintf
+ 0000:19CD       _fseek
+ 0000:1A4D       _ftell
+ 0000:1AA5       _memcpy
+ 0000:1AC9       __fputc
+ 0000:1AE5       _fputc
+ 0000:1C78       _fputchar
+ 0000:1C8C       __FPUTN
+ 0000:1E8B       _setvbuf
+ 0000:1FE6       _sprintf
+ 0000:2008       _vsprintf
+ 0000:2029       ___write
+ 0000:2178       __write
+ 0000:21B4       __xfflush
+ 021E:000C       _getch
+ 021E:0038       _prnt_nm
+ 021E:005A       _prnt_nm1
+ 021E:0088       _prnt
+ 021E:01A9       _main
+ 025A:000F       _CheckCpuSpeed
+ 025A:00CA       _InitLib
+ 0267:00DA       _InstallUserTimerFunction_us
+ 0267:0131       _InstallUserTimerFunction_ms
+ 0267:015E       _StopUserTimerFun
+ 027D:0003       _LongDiv
+ 0281:000D       _Chk_Port
+ 0283:0005       _InstallCom
+ 0286:000D       _RestoreCom
+ 0289:0003       _NullIsCom
+ 0289:0006       _IsCom
+ 028B:000C       _ReadCom
+ 0291:0000       _SetBaudrate_3
+ 0291:005F       _SetDataFormat_3
+ 02A5:00A4       _InstallCom_DMA_3
+ 02A5:012F       _ReadComn_DMA_3
+ 02A5:01E3       _DataSizeInCom_DMA_3
+ 02A5:021F       _ClearCom_DMA_3
+ 02A5:023E       _IsCom_DMA_3
+ 02A5:024D       _ReadCom_DMA_3
+ 02CF:0006       _IsCom_3
+ 02D1:000E       _SetXonXoffControlMode_3
+ 02D1:0019       _SetComPortBufferSize_3
+ 02D1:0040       _ClearTxBuffer_3
+ 02D1:004C       _GetTxBufferFreeSize_3
+ 02D1:00D3       _InstallComInputData_3
+ 02D1:00E5       _CheckXonXoff_3
+ 02D1:00FB       _Serial_Isr_3
+ 02D1:02E5       _InstallCom_3
+ 02D1:0416       _RestoreCom_3
+ 031C:000A       _ReadCom_3
+ 0323:000A       _SetBaudrate_4
+ 0323:0069       _SetDataFormat_4
+ 0337:00AE       _InstallCom_DMA_4
+ 0337:0139       _ReadComn_DMA_4
+ 0337:01ED       _DataSizeInCom_DMA_4
+ 0337:0229       _ClearCom_DMA_4
+ 0337:0248       _IsCom_DMA_4
+ 0337:0257       _ReadCom_DMA_4
+ 0362:0000       _IsCom_4
+ 0364:0008       _SetXonXoffControlMode_4
+ 0364:0013       _SetComPortBufferSize_4
+ 0364:003A       _ClearTxBuffer_4
+ 0364:0046       _GetTxBufferFreeSize_4
+ 0364:00CD       _InstallComInputData_4
+ 0364:00DF       _CheckXonXoff_4
+ 0364:00F5       _Serial_Isr_4
+ 0364:02DF       _InstallCom_4
+ 0364:0410       _RestoreCom_4
+ 03AF:0004       _IsComOutBufEmpty_4
+ 03B0:0001       _printCom_4
+ 03B3:000A       _ReadCom_4
+ 03BA:000A       _ToComBufn_4
+ 03CF:000A       _ToComStr_4
+ 03D2:000A       _SetComTimeout_4
+ 03D2:0015       _ToCom_4
+ 03DC:000A       _SetBaudrate_1
+ 03DC:0067       _SetDataFormat_1
+ 03EB:0008       _IsCom_1
+ 03ED:0003       _ReadCom_1
+ 03F3:000C       _SetXonXoffControlMode_1
+ 03F3:0017       _SetComPortBufferSize_1
+ 03F3:003F       _ClearTxBuffer_1
+ 03F3:0058       _GetTxBufferFreeSize_1
+ 03F3:006F       _SetComFifoTriggerLevel_1
+ 03F3:00E7       _GetInputBufFreeSize_1
+ 03F3:0159       _InstallComInputData_1
+ 03F3:016B       _CheckXonXoff_1
+ 03F3:0181       _CheckInputBufSize_1
+ 03F3:0500       _InstallCom_1
+ 03F3:0670       _RestoreCom_1
+ 0463:0008       _SetBaudrate_2
+ 0463:0065       _SetDataFormat_2
+ 0472:0006       _IsCom_2
+ 0474:0001       _ReadCom_2
+ 0478:0002       _SetComPortBufferSize_2
+ 0478:0013       _ClearTxBuffer_2
+ 0478:002C       _GetTxBufferFreeSize_2
+ 0478:0043       _SetComFifoTriggerLevel_2
+ 0478:00BB       _GetInputBufFreeSize
+ 0478:0107       _InstallComInputData_2
+ 0478:02A3       _InstallCom_2
+ 0478:03EA       _RestoreCom_2
+ 04C0:0002       _SetBaudrate_5
+ 04C0:005F       _SetDataFormat_5
+ 04CF:0000       _IsCom_5
+ 04D0:000B       _ReadCom_5
+ 04D7:0004       _SetXonXoffControlMode_5
+ 04D7:000F       _SetComPortBufferSize_5
+ 04D7:0037       _ClearTxBuffer_5
+ 04D7:0050       _GetTxBufferFreeSize_5
+ 04D7:0067       _SetComFifoTriggerLevel_5
+ 04D7:00DF       _GetInputBufFreeSize_5
+ 04D7:0151       _InstallComInputData_5
+ 04D7:0163       _CheckXonXoff_5
+ 04D7:0179       _CheckInputBufSize_5
+ 04D7:04F8       _InstallCom_5
+ 04D7:0668       _RestoreCom_5
+ 0547:0000       _SetBaudrate_6
+ 0547:005D       _SetDataFormat_6
+ 0555:000E       _IsCom_6
+ 0557:0009       _ReadCom_6
+ 055E:0002       _SetXonXoffControlMode_6
+ 055E:000D       _SetComPortBufferSize_6
+ 055E:0035       _ClearTxBuffer_6
+ 055E:004E       _GetTxBufferFreeSize_6
+ 055E:0065       _SetComFifoTriggerLevel_6
+ 055E:00DD       _GetInputBufFreeSize_6
+ 055E:014F       _InstallComInputData_6
+ 055E:0161       _CheckXonXoff_6
+ 055E:0177       _CheckInputBufSize_6
+ 055E:04F6       _InstallCom_6
+ 055E:0666       _RestoreCom_6
+ 05CD:000E       _SetBaudrate_7
+ 05CD:006B       _SetDataFormat_7
+ 05DC:000C       _IsCom_7
+ 05DE:0007       _ReadCom_7
+ 05E5:0000       _SetXonXoffControlMode_7
+ 05E5:000B       _SetComPortBufferSize_7
+ 05E5:0033       _ClearTxBuffer_7
+ 05E5:004C       _GetTxBufferFreeSize_7
+ 05E5:0063       _SetComFifoTriggerLevel_7
+ 05E5:00DB       _GetInputBufFreeSize_7
+ 05E5:014D       _InstallComInputData_7
+ 05E5:015F       _CheckXonXoff_7
+ 05E5:0175       _CheckInputBufSize_7
+ 05E5:04F4       _InstallCom_7
+ 05E5:0664       _RestoreCom_7
+ 0654:000C       _GetDi1
+ 0655:0007       _GetDi2
+ 0657:2152       e086_Entry
+ 0657:26E0       e086_Shortcut
+ 08CF:0306       e087_Entry
+ 08CF:03C6       e087_Shortcut
+ 08CF:0430       e087_Trap
+ 092C:0000       DATASEG@
+ 092C:005B       __Int0Vector
+ 092C:005F       __Int4Vector
+ 092C:0063       __Int5Vector
+ 092C:0067       __Int6Vector
+ 092C:006B       __C0argc
+ 092C:006D       __C0argv
+ 092C:0071       __C0environ
+ 092C:0075       __envLng
+ 092C:0077       __envseg
+ 092C:0079       __envSize
+ 092C:007B       __psp
+ 092C:007D       __osversion
+ 092C:007D       __osmajor
+ 092C:007D       __version
+ 092C:007E       __osminor
+ 092C:007F       _errno
+ 092C:0081       __StartTime
+ 092C:0085       ___brklvl
+ 092C:0087       __heapbase
+ 092C:008B       __brklvl
+ 092C:008F       __heaptop
+ 092C:0094       _quit_mmi
+ 092C:0096       _qwe
+ 092C:0098       _flag
+ 092C:019C       _TimeTicks
+ 092C:01A0       _ResetMode
+ 092C:01A4       _IntVect
+ 092C:01A8       _SystemSerialNumber
+ 092C:01AC       ____OsType__
+ 092C:01B0       _Unit_ms
+ 092C:01B2       _Unit_ms1
+ 092C:01B4       _Unit_ms2
+ 092C:01B6       _bNeedSetSpeed
+ 092C:01B8       ___BaudDiv__
+ 092C:01BC       __CpuSpeed
+ 092C:01BE       _STD_PORT
+ 092C:01CE       _InstallCom_
+ 092C:01EE       _RestoreCom_
+ 092C:020E       _IsCom_
+ 092C:022E       _ReadCom_
+ 092C:024E       _TriggerLevel
+ 092C:025C       __Modify_Data
+ 092C:026C       __Stop2_3
+ 092C:0274       _In7188Buf_3
+ 092C:0278       _Out7188Buf_3
+ 092C:027C       _InBufSize_3
+ 092C:027E       _OutBufSize_3
+ 092C:0280       _InBeginIdx_3
+ 092C:0282       _InEndIdx_3
+ 092C:0284       _OutBeginIdx_3
+ 092C:0286       _OutEndIdx_3
+ 092C:0288       _SizeToXoff_3
+ 092C:028A       _SizeToXon_3
+ 092C:028C       _ReceiveXoff_3
+ 092C:028D       _NeedXoff_3
+ 092C:028E       _SendXoff_3
+ 092C:028F       _bUseXonXoff_3
+ 092C:0290       _err_3
+ 092C:0291       _UseDMA_3
+ 092C:0293       _OldVectA
+ 092C:0297       _ComData7_3
+ 092C:0299       _Rcnt_3
+ 092C:029D       _LossCnt__3
+ 092C:02A1       _LossCnt_1_3
+ 092C:02A5       _LossCnt_2_3
+ 092C:02A9       _status1_3
+ 092C:02AF       _bGetBreak_3
+ 092C:02B2       __Stop2_4
+ 092C:02BA       _In7188Buf_4
+ 092C:02BE       _Out7188Buf_4
+ 092C:02C2       _InBufSize_4
+ 092C:02C4       _OutBufSize_4
+ 092C:02C6       _InBeginIdx_4
+ 092C:02C8       _InEndIdx_4
+ 092C:02CA       _OutBeginIdx_4
+ 092C:02CC       _OutEndIdx_4
+ 092C:02CE       _SizeToXoff_4
+ 092C:02D0       _SizeToXon_4
+ 092C:02D2       _ReceiveXoff_4
+ 092C:02D3       _NeedXoff_4
+ 092C:02D4       _SendXoff_4
+ 092C:02D5       _bUseXonXoff_4
+ 092C:02D6       _err_4
+ 092C:02D7       _UseDMA_4
+ 092C:02D9       _OldVectB
+ 092C:02DD       _ComData7_4
+ 092C:02DF       _Rcnt_4
+ 092C:02E3       _LossCnt_0_4
+ 092C:02E7       _LossCnt_1_4
+ 092C:02EB       _LossCnt_2_4
+ 092C:02EF       _status1_4
+ 092C:02F5       _bGetBreak_4
+ 092C:02FA       _ComBase_1
+ 092C:02FC       _InInIdx_1
+ 092C:02FE       _InOutIdx_1
+ 092C:0300       _ComErr_1
+ 092C:0301       _InData_1
+ 092C:0305       _OutData_1
+ 092C:0309       _InBufSize_1
+ 092C:030B       _OutBufSize_1
+ 092C:030D       _OutInIdx_1
+ 092C:030F       _OutOutIdx_1
+ 092C:0311       _fCtsControlMode_1
+ 092C:0313       _fRtsControlMode_1
+ 092C:0315       _CurCTS_1
+ 092C:0317       _CurRTS_1
+ 092C:0319       _bCtsChanged_1
+ 092C:031B       _SizeToXoff_1
+ 092C:031D       _SizeToXon_1
+ 092C:031F       _ReceiveXoff_1
+ 092C:0320       _NeedXoff_1
+ 092C:0321       _SendXoff_1
+ 092C:0322       _bUseXonXoff_1
+ 092C:0323       _ComFcr_1
+ 092C:0324       _DoInputData_1
+ 092C:0328       _ComInCount_1
+ 092C:032C       _ComOutCount_1
+ 092C:0330       _bGetBreak_1
+ 092C:0336       _bMsrChanged_1
+ 092C:0338       _LsrError_1
+ 092C:033A       _ComBase_2
+ 092C:033C       _InInIdx_2
+ 092C:033E       _InOutIdx_2
+ 092C:0340       _ComErr_2
+ 092C:0341       _InData_2
+ 092C:0345       _OutData_2
+ 092C:0349       _InBufSize_2
+ 092C:034B       _OutBufSize_2
+ 092C:034D       _OutInIdx_2
+ 092C:034F       _OutOutIdx_2
+ 092C:0351       _ComFcr_2
+ 092C:0352       _DoInputData_2
+ 092C:0356       _ComInCount_2
+ 092C:035A       _ComOutCount_2
+ 092C:035E       _bGetBreak_2
+ 092C:0364       _bMsrChanged
+ 092C:0366       _LsrError_2
+ 092C:0368       _ComBase_5
+ 092C:036A       _InInIdx_5
+ 092C:036C       _InOutIdx_5
+ 092C:036E       _ComErr_5
+ 092C:036F       _InData_5
+ 092C:0373       _OutData_5
+ 092C:0377       _InBufSize_5
+ 092C:0379       _OutBufSize_5
+ 092C:037B       _OutInIdx_5
+ 092C:037D       _OutOutIdx_5
+ 092C:037F       _fCtsControlMode_5
+ 092C:0381       _fRtsControlMode_5
+ 092C:0383       _CurCTS_5
+ 092C:0385       _CurRTS_5
+ 092C:0387       _bCtsChanged_5
+ 092C:0389       _SizeToXoff_5
+ 092C:038B       _SizeToXon_5
+ 092C:038D       _ReceiveXoff_5
+ 092C:038E       _NeedXoff_5
+ 092C:038F       _SendXoff_5
+ 092C:0390       _bUseXonXoff_5
+ 092C:0391       _ComFcr_5
+ 092C:0392       _DoInputData_5
+ 092C:0396       _ComInCount_5
+ 092C:039A       _ComOutCount_5
+ 092C:039E       _bGetBreak_5
+ 092C:03A4       _bMsrChanged_5
+ 092C:03A6       _LsrError_5
+ 092C:03A8       _ComBase_6
+ 092C:03AA       _InInIdx_6
+ 092C:03AC       _InOutIdx_6
+ 092C:03AE       _ComErr_6
+ 092C:03AF       _InData_6
+ 092C:03B3       _OutData_6
+ 092C:03B7       _InBufSize_6
+ 092C:03B9       _OutBufSize_6
+ 092C:03BB       _OutInIdx_6
+ 092C:03BD       _OutOutIdx_6
+ 092C:03BF       _fCtsControlMode_6
+ 092C:03C1       _fRtsControlMode_6
+ 092C:03C3       _CurCTS_6
+ 092C:03C5       _CurRTS_6
+ 092C:03C7       _bCtsChanged_6
+ 092C:03C9       _SizeToXoff_6
+ 092C:03CB       _SizeToXon_6
+ 092C:03CD       _ReceiveXoff_6
+ 092C:03CE       _NeedXoff_6
+ 092C:03CF       _SendXoff_6
+ 092C:03D0       _bUseXonXoff_6
+ 092C:03D1       _ComFcr_6
+ 092C:03D2       _DoInputData_6
+ 092C:03D6       _ComInCount_6
+ 092C:03DA       _ComOutCount_6
+ 092C:03DE       _bGetBreak_6
+ 092C:03E4       _bMsrChanged_6
+ 092C:03E6       _LsrError_6
+ 092C:03E8       _ComBase_7
+ 092C:03EA       _InInIdx_7
+ 092C:03EC       _InOutIdx_7
+ 092C:03EE       _ComErr_7
+ 092C:03EF       _InData_7
+ 092C:03F3       _OutData_7
+ 092C:03F7       _InBufSize_7
+ 092C:03F9       _OutBufSize_7
+ 092C:03FB       _OutInIdx_7
+ 092C:03FD       _OutOutIdx_7
+ 092C:03FF       _fCtsControlMode_7
+ 092C:0401       _fRtsControlMode_7
+ 092C:0403       _CurCTS_7
+ 092C:0405       _CurRTS_7
+ 092C:0407       _bCtsChanged_7
+ 092C:0409       _SizeToXoff_7
+ 092C:040B       _SizeToXon_7
+ 092C:040D       _ReceiveXoff_7
+ 092C:040E       _NeedXoff_7
+ 092C:040F       _SendXoff_7
+ 092C:0410       _bUseXonXoff_7
+ 092C:0411       _ComFcr_7
+ 092C:0412       _DoInputData_7
+ 092C:0416       _ComInCount_7
+ 092C:041A       _ComOutCount_7
+ 092C:041E       _bGetBreak_7
+ 092C:0424       _bMsrChanged_7
+ 092C:0426       _LsrError_7
+ 092C:0430       __8087
+ 092C:0440       __protected
+ 092C:0441       __LDT
+ 092C:0444       __default87
+ 092C:0560       __atexitcnt
+ 092C:0562       __exitbuf
+ 092C:0566       __exitfopen
+ 092C:056A       __exitopen
+ 092C:056E       __streams
+ 092C:06FE       __nfile
+ 092C:0700       __openfd
+ 092C:0728       __fpstklen
+ 092C:072A       __doserrno
+ 092C:072C       __dosErrorToSV
+ 092C:0786       __stklen
+ 092C:082A       __RealCvtVector
+ 092C:082E       __ScanTodVector
+ 092C:0846       _time_nm1
+ 092C:084A       _nm2
+ 092C:084C       _nm1
+ 092C:084E       _ttt_l_nm
+ 092C:0852       _ttt4_l
+ 092C:0856       _ttt3_l
+ 092C:085A       _ttt2_l
+ 092C:085E       _ttt1_l
+ 092C:0862       _ttt_nm
+ 092C:0864       _ttt4
+ 092C:0866       _ttt3
+ 092C:0868       _ttt2
+ 092C:086A       _ttt1
+ 092C:0994       _CurMsr_1
+ 092C:0996       _CurMsr
+ 092C:09AC       _CurMsr_5
+ 092C:09B8       _CurMsr_6
+ 092C:09C4       _CurMsr_7
+ 092C:09C6       __atexittbl
+ 092C:0A46       ___SignalPtr
+ 09D1:0000       __emu
+
+Program entry point at 0000:0000
+
